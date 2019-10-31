@@ -1,22 +1,130 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  background-image: url(https://images.unsplash.com/photo-1552770687-655f35ecf8b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-family: "Lato", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  --black: #0d0d0d;
+  --red: white;
+}
+
+.container {
+  width: 60%;
+  background-color: rgba(204, 204, 204, 0.9);
+  color: black;
+  margin: 0 auto;
+  padding: 5rem;
+  border: 4px solid black;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.home,
+.away {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  place-items: center;
+  border: 3px solid black;
+  width: 30rem;
+}
+
+.home {
+  background-color: #0c2c56;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.away {
+  background-color: #c0001d;
+  color: white;
+}
+
+.home-name,
+.away-name,
+.balls-title,
+.strikes-title,
+.outs-title,
+.inning-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.home-runs,
+.away-runs {
+  font-size: 7rem;
+  width: 90%;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--red);
+  padding: 5%;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  height: 20rem;
+}
+
+.balls,
+.strikes,
+.outs,
+.inning {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.balls-number,
+.strikes-number,
+.outs-number,
+.inning-number {
+  font-size: 5rem;
+  width: 7rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: -3rem;
+  padding: 1.6rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.home-score-btn,
+.away-score-btn,
+.balls-btn,
+.strikes-btn,
+.outs-btn,
+.innings-btn,
+.fouls-btn,
+.hit-btn {
+  width: 20%;
+  font-size: 1.6rem;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
 }

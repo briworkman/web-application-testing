@@ -18,6 +18,7 @@ const Dashboard = () => {
       setBalls(0);
     }
   };
+
   const strikeCounter = () => {
     if (strikes < 2) {
       setStrikes(strikes + 1);

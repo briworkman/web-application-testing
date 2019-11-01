@@ -128,3 +128,16 @@ body {
   background-color: black;
   color: white;
 }
+
+.home-score-btn:hover,
+.away-score-btn:hover,
+.balls-btn:hover,
+.strikes-btn:hover,
+.outs-btn:hover,
+.innings-btn:hover,
+.fouls-btn:hover,
+.hit-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
